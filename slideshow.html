@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title></title>
+		<meta content="">
+		<style>
+			#slideshow {
+				width:400px;
+				height:300px;
+				position:relative;
+			}
+			#slideshow ul {
+				width:400px;
+				height:300px;
+				list-style: none outside none;
+				position: relative;
+				overflow: hidden;
+			}
+			#slideshow li:first-child {
+				display:list-item;
+				position:absolute;
+			}
+			#slideshow li {
+				position:absolute;
+				display:none;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="slideshow">
+			<ul id="box">
+				<li><img src="images/40k.jpg" width="400" height="300" /></li>
+				<li><img src="images/dd.jpg" width="400" height="300" /></li>
+				<li><img src="images/shadowrun.jpg" width="400" height="300" /></li>
+				<li><img src="images/eclipsephase.jpg" width="400" height="300" /></li>
+				<li><img src="images/deadlands.jpg" width="400" height="300" /></li>
+			</ul>
+			<br>
+			<span>
+				<button onclick = "left()">back</button>
+				<button onclick = "right()">next</button>
+			</span>
+		</div>
+		<script>	
+			var $lis = $('ol li');
+			var current = 0;
+			var currentPage = box
+			var nextPage;
+
+			function left() {
+				alert("hello");
+				if(current<=0) {
+					current=4;
+				}
+				else {
+					current = current-1;
+				}
+				nextPage = pages.eq(pages);
+				alert("greets");
+				alert(nextPage);
+				currentPage.hide();
+				nextPage.show();
+			}
+			function right() {
+				
+			}
+
+
+
+		</script>
+	</body>
+</html>
