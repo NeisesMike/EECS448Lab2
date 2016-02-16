@@ -4,36 +4,51 @@
 		<meta content="">
 		<style>
 			#slideshow {
-				width:400px;
-				height:300px;
+				width:600px;
+				height:400px;
 				position:relative;
+				text-align: center;
 			}
 			#slideshow ul {
-				width:400px;
-				height:300px;
+				width:600px;
+				height:400px;
 				list-style: none outside none;
 				position: relative;
 				overflow: hidden;
 			}
-			#slideshow li:first-child {
-				display:list-item;
-				position:absolute;
-			}
 			#slideshow li {
 				position:absolute;
-				display:none;
 			}
-
+			#slideshow button {
+				background-color: #949494;
+				border: none;
+				font-size: 20px;
+				border-radius: 8px;
+			}
+			#slideshow button:hover {
+				background-color: #707070;
+				
+			}
 		</style>
 	</head>
-	<body>
+	<body onload="hider()">
 		<div id="slideshow">
 			<ul id="box">
-				<li><img src="images/40k.jpg" width="400" height="300" /></li>
-				<li><img src="images/dd.jpg" width="400" height="300" /></li>
-				<li><img src="images/shadowrun.jpg" width="400" height="300" /></li>
-				<li><img src="images/eclipsephase.jpg" width="400" height="300" /></li>
-				<li><img src="images/deadlands.jpg" width="400" height="300" /></li>
+				<li><img id="0" title = "40k" src="images/40k.jpg" width="600" height="400" /></li>
+				<li><img id="1" title = "d&d" src="images/dd.jpg" width="600" height="400" /></li>
+				<li><img id="2" title = "Shadowrun" src="images/shadowrun.jpg" width="600" height="400" /></li>
+				<li><img id="3" title = "Eclipse Phase" src="images/eclipsephase.jpg" width="600" height="400" /></li>
+				<li><img id="4" title = "Deadlands" src="images/deadlands.jpg" width="600" height="400" /></li>
+				<script>
+					var hide;
+					function hider() {				
+						for(i=1;i<5;i++)
+						{
+								hide = document.getElementById(i.toString());
+								hide.style.display='none';		
+						}
+					}
+				</script>
 			</ul>
 			<br>
 			<span>
@@ -42,27 +57,36 @@
 			</span>
 		</div>
 		<script>	
-			var $lis = $('ol li');
-			var current = 0;
-			var currentPage = box
 			var nextPage;
+			var currentPage = 0;
+			var next;
+			var last;			
 
 			function left() {
-				alert("hello");
-				if(current<=0) {
-					current=4;
+				if(currentPage<=0) {
+					nextPage=4;
 				}
 				else {
-					current = current-1;
+					nextPage = currentPage-1;
 				}
-				nextPage = pages.eq(pages);
-				alert("greets");
-				alert(nextPage);
-				currentPage.hide();
-				nextPage.show();
+				last = document.getElementById(currentPage.toString());
+				next = document.getElementById(nextPage.toString());
+				last.style.display = 'none';
+				next.style.display = 'inline';
+				currentPage = nextPage;
 			}
 			function right() {
-				
+				if(currentPage>=4) {
+					nextPage=0;
+				}
+				else {
+					nextPage = currentPage+1;
+				}
+				last = document.getElementById(currentPage.toString());
+				next = document.getElementById(nextPage.toString());
+				last.style.display = 'none';
+				next.style.display = 'inline';
+				currentPage = nextPage;
 			}
 
 
