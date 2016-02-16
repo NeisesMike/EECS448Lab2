@@ -1,0 +1,64 @@
+body{
+	background-color: #707070;
+}
+img{
+	display:inline block;
+}
+div.container{
+	border-style:solid;
+	height:350px;
+}
+div.right{
+	left:350px;
+	text-align:center;
+}
+div.video{
+	margin-left:350px;
+	background-color:black;
+	height:350px;
+	text-align:center;
+}
+aside{
+	float:left;
+	text-align:left;
+	width:350px;
+}
+aside.sites{
+	font-size: 18px;
+	line-height:30px;
+}
+h2{
+	font-size: 32px;
+	text-align:center;
+    text-decoration: underline;
+}
+section.top{
+	float:top;
+	text-align:center;
+	vertical-align:middle;
+	height:15%;
+
+}
+section.bottom{
+	text-align:left;
+	margin-left:360px;
+	float:bottom;
+	height:85%;
+
+}
+h1{
+	font-size:35px;
+	display:inline;
+	vertical-align:top;
+	text-align:center;
+	font-family: serif;
+}
+h1:hover{
+	color: blue;
+}
+p{
+	font-size:15px;
+
+	display:inline;
+	vertical-align:top;
+} 
