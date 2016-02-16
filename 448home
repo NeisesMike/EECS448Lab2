@@ -6,11 +6,11 @@
 		body{
 			background-color:#707070;
 		}
-
 	</style>
 	</head>
 	<body>
 		<ul>
+			<li><a href="http://people.eecs.ku.edu/~mneises">Home</a></li>
 			<li><a href="http://people.eecs.ku.edu/~mneises/password">Password Checker</a></li>
 			<li><a href="http://people.eecs.ku.edu/~mneises/standardprofile">Profile</a></li>
 			<li><a href="http://people.eecs.ku.edu/~mneises/slideshow">Slideshow</a></li>
