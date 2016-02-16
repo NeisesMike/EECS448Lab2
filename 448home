@@ -1,0 +1,20 @@
+<html>
+	<head>
+	<title></title>
+	<meta content="">
+	<style>
+		body{
+			background-color:#707070;
+		}
+
+	</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="http://people.eecs.ku.edu/~mneises/password">Password Checker</a></li>
+			<li><a href="http://people.eecs.ku.edu/~mneises/standardprofile">Profile</a></li>
+			<li><a href="http://people.eecs.ku.edu/~mneises/slideshow">Slideshow</a></li>
+		</ul>
+		<p>More will come later! Sorry it's so bland!</p>
+	</body>
+</html>
