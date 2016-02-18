@@ -6,15 +6,21 @@
 		body{
 			background-color:#707070;
 		}
+		a{
+			font-size: 18px;
+		}
 	</style>
 	</head>
 	<body>
+		<h1>EECS 448: Software Engineering</h1>
+		<h2>Projects</h2>
 		<ul>
-			<li><a href="http://people.eecs.ku.edu/~mneises">Home</a></li>
 			<li><a href="http://people.eecs.ku.edu/~mneises/password">Password Checker</a></li>
 			<li><a href="http://people.eecs.ku.edu/~mneises/standardprofile">Profile</a></li>
 			<li><a href="http://people.eecs.ku.edu/~mneises/slideshow">Slideshow</a></li>
+			<li><a href="http://people.eecs.ku.edu/~mneises/cssManip">CSS Manipulation</a></li>
 		</ul>
-		<p>More will come later! Sorry it's so bland!</p>
+		<p></p>
+		<a href="http://people.eecs.ku.edu/~mneises">Home</a>
 	</body>
 </html>

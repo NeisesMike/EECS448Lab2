@@ -1,10 +1,11 @@
 body{
-	background-color: #707070;
+	background-image: url(images/matrix2.jpg);
 }
 img{
 	display:inline block;
 }
 div.container{
+	background-color: #707070;
 	border-style:solid;
 	height:350px;
 }
@@ -44,20 +45,24 @@ section.bottom{
 	margin-left:360px;
 	float:bottom;
 	height:85%;
+	margin-bottom: 15px;
 
 }
 h1{
 	font-size:35px;
+	font-size: 3vw;
 	display:inline;
 	vertical-align:top;
 	text-align:center;
 	font-family: serif;
+    text-decoration: underline;
 }
 h1:hover{
 	color: blue;
 }
 p{
-	font-size:15px;
+	font-size:16px;
+	font-size:1.3vw;
 
 	display:inline;
 	vertical-align:top;

@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title></title>
+		<meta content="">
+		<style>
+			#dummy{
+				border-style: solid;
+				border-width: 5px;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<a href="http://people.eecs.ku.edu/~mneises/448home">Home</a>
+		<p id="dummy">Dummy Text</p>
+		<form>
+			Background Color: <br> Red, blue, or green<br>
+			<input id="back" type="text" value="red"> <br>
+			Border: <br> Red, blue, green, or border width<br>
+			<input id="border" type="text" value="blue"> <br>
+		</form>
+		<button onclick="setColors()">Make it Happen</button>
+		<p>Background Color is:</p>
+		<span id="background"></span>
+		<p>Border Color is:</p>
+		<span id="bordercolor"></span>
+
+		<script>
+			function setColors() {
+				var x = document.getElementById("back").value;
+				var y = document.getElementById("border").value;
+				if(x=="red"||x=="green"||x=="blue") {
+					dummy.style.backgroundColor = x;
+					if(x=="red"){
+						document.getElementById("background").innerHTML="#FF0000";
+					}
+					if(x=="blue"){
+						document.getElementById("background").innerHTML="#0000FF";
+					}
+					if(x=="green"){
+						document.getElementById("background").innerHTML="#008000";
+					}
+				}
+				else{
+					alert("Invalid Background Color Input");
+				}
+				if(Number(y)>=0){
+					dummy.style.borderWidth = y;
+				}
+				else if(y=="red"||y=="green"||y=="blue"){
+					dummy.style.borderColor = y;
+					if(y=="red"){
+						document.getElementById("bordercolor").innerHTML="#FF0000";
+					}
+					if(y=="blue"){
+						document.getElementById("bordercolor").innerHTML="#0000FF";
+					}
+					if(y=="green"){
+						document.getElementById("bordercolor").innerHTML="#008000";
+					}
+				}
+				else{
+					alert("Invalid Border Input");
+				}
+			}
+
+		</script>
+	</body>
+</html>
